@@ -1,0 +1,9 @@
+domain: minhlt
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: k8s-operator-nginx
+repo: github.com/luuthanhminh/k8s-operator-nginx
+version: "3"
