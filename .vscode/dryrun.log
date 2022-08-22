@@ -1,0 +1,8 @@
+mkdir -p /home/dev/projects/go_projects/k8s-operator-nginx/bin
+GOBIN=/home/dev/projects/go_projects/k8s-operator-nginx/bin go install sigs.k8s.io/controller-tools/cmd/controller-gen@v0.9.0
+/home/dev/projects/go_projects/k8s-operator-nginx/bin/controller-gen object:headerFile="hack/boilerplate.go.txt" paths="./..."
+go fmt ./...
+go vet ./...
+go build -o bin/manager main.go
+make: Leaving directory '/home/dev/projects/go_projects/k8s-operator-nginx'
+ 
